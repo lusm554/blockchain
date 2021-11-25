@@ -4,7 +4,7 @@
 I want to implement my version of blockchain to learn about crypto 
 
 ## Notes
-Do not forget!!
+Do not forget!! <br>
 To better understand ETH, this blockchain borrow some things from the Ethereum blockchain.
 
 ### How to store data?
