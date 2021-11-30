@@ -33,3 +33,7 @@ Account details:
 
 ### Transaction trie — one per block
 ...
+
+
+Error while `pip install plyvel`? Fix - `brew install leveldb gmp pkg-config`.
+
