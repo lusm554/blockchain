@@ -5,7 +5,8 @@ I want to implement my version of blockchain to learn about crypto
 
 ## Notes
 Do not forget!! <br>
-To better understand ETH, this blockchain borrow some things from the Ethereum blockchain.
+To better understand ETH, this blockchain borrow some things from the Ethereum blockchain. <br>
+LevelDB better for this purpose, but for raw version let's use MongoDB.
 
 ### How to store data?
 Two types of data:
@@ -33,7 +34,4 @@ Account details:
 
 ### Transaction trie — one per block
 ...
-
-
-Error while `pip install plyvel`? Fix - `brew install leveldb gmp pkg-config`.
 
