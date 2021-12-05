@@ -44,3 +44,12 @@ Parameters:
 - account initialization (if transaction is of contract creation type), or transaction data (if transaction is a message call)
 
 Once the block is mined, the transaction trie is never updated.
+
+### Receipt Trie
+The Receipt root lives within the block header and its purpose it to record the outcome of transaction. According to the yellow paper, the receipt trie can also be useful for zero-knowledge proofs or researches. <br>
+Parameters:
+- post-transaction state
+- cumulative gas used
+- logs
+- bloom filter created from the information of the above logs
+This trie never updates.
