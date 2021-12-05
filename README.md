@@ -33,5 +33,14 @@ Account details:
 - codeHash
 
 ### Transaction trie — one per block
-...
+The transaction root exists within the block header. Since the ordering of the data is mostly decided upon by the miner, we do not know what the data looks like until it is mined. <br>
+Parameters:
+- account nonce
+- gas price
+- gas limit
+- recipient
+- transfer value
+- transaction signature values
+- account initialization (if transaction is of contract creation type), or transaction data (if transaction is a message call)
 
+Once the block is mined, the transaction trie is never updated.
