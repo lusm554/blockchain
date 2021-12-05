@@ -51,3 +51,8 @@ Parameters:
 - logs
 - bloom filter created from the information of the above logs
 This trie never updates.
+
+### Storage Trie
+The storage trie is where all the contract data lives, and there is a separate storage trie for each account. <br>
+At the moment Blochain will be without storage trie.
+
