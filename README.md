@@ -20,17 +20,15 @@ An example of ephemeral data would be the balance of a particular account addres
 So, the permanent data and ephemeral data should be stored separately. This blockchain will use trie data structures to manage data, I think.
 
 ### State trie
-This global state trie is constantly updated.
-The state trie contains a **key and value pair** for every account which exists on the Ethereum network. <br>
-
+The one and only one global state trie. The state trie contains a **key and value pair** for every account which exists on the Ethereum network. <br>
 The **key** is a signle 160 bit indentifier (the address of Blockchain account). <br>
-
-The **value** in the global state trie is created by encoding account details of an Blockchain account. I think it will be Recursive-Length Prefix encoding (RLP) method([pylib](https://pypi.org/project/rlp/), [tutorial](https://ethereum-classic-guide.readthedocs.io/en/latest/docs/appendices/recursive_length_prefix.html)). <br>
+The **value** is encoding account details of an Blockchain account. I think it will be Recursive-Length Prefix encoding (RLP) method([pylib](https://pypi.org/project/rlp/), [tutorial](https://ethereum-classic-guide.readthedocs.io/en/latest/docs/appendices/recursive_length_prefix.html)). <br>
 Account details:
 - nonce
 - balance
 - storageRoot
 - codeHash
+Unlike the transaction and receipt tries, the state trie updates over time, constantly.
 
 ### Transaction trie — one per block
 The transaction root exists within the block header. Since the ordering of the data is mostly decided upon by the miner, we do not know what the data looks like until it is mined. <br>
