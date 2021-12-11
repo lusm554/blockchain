@@ -8,7 +8,7 @@ Do not forget!! <br>
 To better understand ETH, this blockchain borrow some things from the Ethereum blockchain. <br>
 LevelDB better for this purpose, but for raw version let's use MongoDB.
 
-[](docs/block-header.png)
+![](docs/block-header.png)
 
 ### How to store data?
 Two types of data:
